@@ -7,7 +7,7 @@ function MultiDocumenter.render(c::JuliaHubCommercialSupportComponent, doc, this
     return MultiDocumenter.@htl """
     <div>
         <a href="$(c.link)" class="nav-link nav-item">
-            <img src="https://info.juliahub.com/hubfs/Julia-Hub-Navigation-Logo-JuliaHub.svg" alt="JuliaHub logo - contact sales today!" style = "padding: 10px;"/>
+            <img src="/assets/juliahub-logo.svg" alt="JuliaHub logo - contact sales today!" style = "padding: 10px;"/>
         </a>
         <p></p>
         <a href="$(c.link)" class="nav-link nav-item">JuliaHub offers commercial support for ModelingToolkit and the SciML ecosystem.  Contact us today to discuss your needs!</a>
