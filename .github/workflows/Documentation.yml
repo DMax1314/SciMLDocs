@@ -45,7 +45,7 @@ jobs:
 
   aggregate:
     name: "Build and Deploy Aggregate Documentation"
-    runs-on: [self-hosted, Linux, X64, gpu]
+    runs-on: [self-hosted, Linux, X64, large]
     timeout-minutes: 2000
     env:
       JULIA_PKG_SERVER: ""
