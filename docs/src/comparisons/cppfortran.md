@@ -67,7 +67,7 @@ solvers:
 
 ## Why SciML? Some Technical Details
 
-Let's face the facts, in the [open benchmarks](https://benchmarks.sciml.ai/stable/) the
+Let's face the facts, in the [open benchmarks](https://docs.sciml.ai/SciMLBenchmarksOutput/stable/) the
 pure-Julia solvers tend to outperform the classic “best” C++ and Fortran solvers in almost
 every example (with a few notable exceptions). But why?
 
@@ -100,7 +100,7 @@ highlight include:
     to evolve, and only Julia's SciML keeps up. At this point, many of the publication's first
     implementation is in [OrdinaryDiffEq.jl](https://github.com/SciML/OrdinaryDiffEq.jl) with
     benchmark results run on the
-    [SciML Open Benchmarking platform!](https://benchmarks.sciml.ai/stable/)
+    [SciML Open Benchmarking platform!](https://docs.sciml.ai/SciMLBenchmarksOutput/stable/)
   - Julia does not take low-level mathematical functions for granted. The
     [common openlibm implementation of mathematical functions](https://openlibm.org/)
     used in many open source projects is maintained by the Julia and SciML developers!
@@ -141,7 +141,7 @@ change algorithms, let's look at the problem of differentiating an ODE solver. A
 [derived and discussed in detail at a seminar with the American Statistical Association](https://www.youtube.com/watch?v=Xwh42RhB7O4),
 there are many ways to implement well-known “adjoint” methods which are required for
 performance. Each has different stability and performance trade-offs, and
-[Julia's SciML is the only system to systemically offer all of the trade-off options](https://sensitivity.sciml.ai/stable/manual/differential_equation_sensitivities/). In many cases,
+[Julia's SciML is the only system to systemically offer all of the trade-off options](https://docs.sciml.ai/SciMLSensitivity/stable/manual/differential_equation_sensitivities/). In many cases,
 using analytical adjoints of a solver is not advised due to performance reasons, [with the
 trade-off described in detail here](https://www.stochasticlifestyle.com/direct-automatic-differentiation-of-solvers-vs-analytical-adjoints-which-is-better/).
 Likewise, even when analytical adjoints are used, it turns out that for general nonlinear

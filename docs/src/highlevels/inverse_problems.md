@@ -5,10 +5,10 @@ solving the inverse problem, or Bayesian posterior estimation (when done probabi
 is provided by the SciML tools for the equations in its set. In this introduction, we briefly
 present the relevant packages that facilitate parameter estimation, namely:
 
-  - [SciMLSensitivity.jl](https://sensitivity.sciml.ai/)
-  - [DiffEqFlux.jl](https://diffeqflux.sciml.ai/)
+  - [SciMLSensitivity.jl](https://docs.sciml.ai/SciMLSensitivity/stable/)
+  - [DiffEqFlux.jl](https://docs.sciml.ai/DiffEqFlux/stable/)
   - [Turing.jl](https://turinglang.org/)
-  - [DataDrivenDiffEq.jl](https://datadriven.sciml.ai/dev/)
+  - [DataDrivenDiffEq.jl](https://docs.sciml.ai/DataDrivenDiffEq/stable/)
   - [DiffEqParamEstim.jl](https://docs.sciml.ai/DiffEqParamEstim/)
   - [DiffEqBayes.jl](https://docs.sciml.ai/DiffEqBayes/)
 

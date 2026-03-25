@@ -9,7 +9,7 @@ ecosystem!
 ## Why SciML? High-Level Workflow Reasons
 
   - **Performance** - The key reason people are moving from MATLAB to Julia's SciML in droves
-    is performance. Even [simple ODE solvers are much faster!](https://benchmarks.sciml.ai/stable/MultiLanguage/ode_wrapper_packages/),
+    is performance. Even [simple ODE solvers are much faster!](https://docs.sciml.ai/SciMLBenchmarksOutput/stable/MultiLanguage/ode_wrapper_packages/),
     demonstrating orders of magnitude performance improvements for differential equations,
     nonlinear solving, optimization, and more. And the performance advantages continue to
     grow as more complex algorithms are required.
@@ -75,17 +75,17 @@ The following chart will help you get quickly acquainted with Julia's SciML Tool
 | `plot`              | [Plots](https://docs.juliaplots.org/stable/), [Makie](https://docs.makie.org/stable/) |
 | `sparse`            | [SparseArrays](https://docs.julialang.org/en/v1/stdlib/SparseArrays/#Sparse-Arrays)   |
 | `interp1`           | [DataInterpolations](https://docs.sciml.ai/DataInterpolations/stable/)                |
-| `\`, `gmres`, `cg`  | [LinearSolve](https://linearsolve.sciml.ai/dev/)                                      |
-| `fsolve`            | [NonlinearSolve](https://nonlinearsolve.sciml.ai/stable/)                             |
+| `\`, `gmres`, `cg`  | [LinearSolve](https://docs.sciml.ai/LinearSolve/stable/)                                      |
+| `fsolve`            | [NonlinearSolve](https://docs.sciml.ai/NonlinearSolve/stable/)                             |
 | `quad`              | [Integrals](https://docs.sciml.ai/Integrals/stable/)                                  |
-| `fmincon`           | [Optimization](https://optimization.sciml.ai/stable/)                                 |
-| `odeXX`             | [DifferentialEquations](https://diffeq.sciml.ai/latest/)                              |
+| `fmincon`           | [Optimization](https://docs.sciml.ai/Optimization/stable/)                                 |
+| `odeXX`             | [DifferentialEquations](https://docs.sciml.ai/DiffEqDocs/stable/)                              |
 | `ode45`             | `Tsit5`                                                                               |
 | `ode113`            | `VCABM`                                                                               |
 | `ode23s`            | `Rosenbrock23`                                                                        |
 | `ode15s`            | `QNDF` or `FBDF`                                                                      |
 | `ode15i`            | `IDA`                                                                                 |
-| `bvp4c` and `bvp5c` | [DifferentialEquations](https://diffeq.sciml.ai/latest/)                              |
-| Simulink, Simscape  | [ModelingToolkit](https://mtk.sciml.ai/dev/)                                          |
+| `bvp4c` and `bvp5c` | [DifferentialEquations](https://docs.sciml.ai/DiffEqDocs/stable/)                              |
+| Simulink, Simscape  | [ModelingToolkit](https://docs.sciml.ai/ModelingToolkit/stable/)                                          |
 | `fft`               | [FFTW](https://github.com/JuliaMath/FFTW.jl)                                          |
 | chebfun             | [ApproxFun](https://juliaapproximation.github.io/ApproxFun.jl/stable/)                |
