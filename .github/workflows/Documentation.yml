@@ -54,7 +54,15 @@ jobs:
       - uses: julia-actions/setup-julia@v2
         with:
           version: "1.11"
+      - name: "Build Aggregate Documentation"
+        run: |
+          julia --version
+          julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'
+          julia --project=docs/ docs/make_aggregate.jl
+        env:
+          DOCUMENTER_KEY: ${{ secrets.DOCUMENTER_KEY }}
       - name: "Install AWS CLI"
+        if: github.event_name == 'push'
         run: |
           if ! command -v aws &> /dev/null; then
             curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -63,13 +71,10 @@ jobs:
             rm -rf awscliv2.zip aws
           fi
           aws --version
-      - name: "Build and Deploy"
+      - name: "Deploy to S3"
+        if: github.event_name == 'push'
         run: |
-          julia --version
-          julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'
-          julia --project=docs/ docs/make_aggregate.jl
           aws s3 sync --delete --acl=public-read docs/build s3://docs.sciml.ai --cache-control max-age=600
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          DOCUMENTER_KEY: ${{ secrets.DOCUMENTER_KEY }}
