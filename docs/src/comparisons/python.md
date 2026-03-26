@@ -9,7 +9,7 @@ of machine learning sublanguages: there is just one cohesive package ecosystem.
 ## Why SciML? High-Level Workflow Reasons
 
   - **Performance** - The key reason people are moving from SciPy to Julia's SciML in droves
-    is performance. Even [simple ODE solvers are much faster!](https://benchmarks.sciml.ai/stable/MultiLanguage/ode_wrapper_packages/),
+    is performance. Even [simple ODE solvers are much faster!](https://docs.sciml.ai/SciMLBenchmarksOutput/stable/MultiLanguage/ode_wrapper_packages/),
     demonstrating orders of magnitude performance improvements for differential equations,
     nonlinear solving, optimization, and more. And the performance advantages continue to
     grow as more complex algorithms are required.
@@ -61,20 +61,20 @@ The following chart will help you get quickly acquainted with Julia's SciML Tool
 |:---------------------------- |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Matplotlib                   | [Plots](https://docs.juliaplots.org/stable/), [Makie](https://docs.makie.org/stable/)                                                                                   |
 | `scipy.special`              | [SpecialFunctions](https://github.com/JuliaMath/SpecialFunctions.jl)                                                                                                    |
-| `scipy.linalg.solve`         | [LinearSolve](https://linearsolve.sciml.ai/dev/)                                                                                                                        |
+| `scipy.linalg.solve`         | [LinearSolve](https://docs.sciml.ai/LinearSolve/stable/)                                                                                                                        |
 | `scipy.integrate`            | [Integrals](https://docs.sciml.ai/Integrals/stable/)                                                                                                                    |
-| `scipy.optimize`             | [Optimization](https://optimization.sciml.ai/stable/)                                                                                                                   |
-| `scipy.optimize.fsolve`      | [NonlinearSolve](https://nonlinearsolve.sciml.ai/stable/)                                                                                                               |
+| `scipy.optimize`             | [Optimization](https://docs.sciml.ai/Optimization/stable/)                                                                                                                   |
+| `scipy.optimize.fsolve`      | [NonlinearSolve](https://docs.sciml.ai/NonlinearSolve/stable/)                                                                                                               |
 | `scipy.interpolate`          | [DataInterpolations](https://docs.sciml.ai/DataInterpolations/stable/)                                                                                                  |
 | `scipy.fft`                  | [FFTW](https://github.com/JuliaMath/FFTW.jl)                                                                                                                            |
 | `scipy.linalg`               | [Julia's Built-In Linear Algebra](https://docs.julialang.org/en/v1/stdlib/LinearAlgebra/)                                                                               |
 | `scipy.sparse`               | [SparseArrays](https://docs.julialang.org/en/v1/stdlib/SparseArrays/#Sparse-Arrays), [ARPACK](https://github.com/JuliaLinearAlgebra/Arpack.jl)                          |
-| `odeint`/`solve_ivp`         | [DifferentialEquations](https://diffeq.sciml.ai/latest/)                                                                                                                |
-| `scipy.integrate.solve_bvp`  | [Boundary-value problem](https://diffeq.sciml.ai/latest/tutorials/bvp_example/#Boundary-Value-Problems)                                                                 |
+| `odeint`/`solve_ivp`         | [DifferentialEquations](https://docs.sciml.ai/DiffEqDocs/stable/)                                                                                                                |
+| `scipy.integrate.solve_bvp`  | [Boundary-value problem](https://docs.sciml.ai/DiffEqDocs/stable/tutorials/bvp_example/#Boundary-Value-Problems)                                                                 |
 | PyTorch                      | [Flux](https://fluxml.ai/), [Lux](https://lux.csail.mit.edu/stable/)                                                                                                    |
-| gillespy2                    | [Catalyst](https://catalyst.sciml.ai/dev/), [JumpProcesses](https://github.com/SciML/JumpProcesses.jl)                                                                  |
+| gillespy2                    | [Catalyst](https://docs.sciml.ai/Catalyst/stable/), [JumpProcesses](https://github.com/SciML/JumpProcesses.jl)                                                                  |
 | scipy.optimize.approx_fprime | [FiniteDiff](https://github.com/JuliaDiff/FiniteDiff.jl)                                                                                                                |
-| autograd                     | [ForwardDiff\*](https://github.com/JuliaDiff/ForwardDiff.jl), [Enzyme\*](https://github.com/EnzymeAD/Enzyme.jl), [DiffEqSensitivity](https://sensitivity.sciml.ai/dev/) |
+| autograd                     | [ForwardDiff\*](https://github.com/JuliaDiff/ForwardDiff.jl), [Enzyme\*](https://github.com/EnzymeAD/Enzyme.jl), [DiffEqSensitivity](https://docs.sciml.ai/SciMLSensitivity/stable/) |
 | Stan                         | [Turing](https://turinglang.org/docs/)                                                                                                                                  |
 | sympy                        | [Symbolics](https://symbolics.juliasymbolics.org/dev/)                                                                                                                  |
 

@@ -40,6 +40,7 @@ makedocs(
         "https://github.com/SciML/Optimization.jl/blob/master/lib/OptimizationPolyalgorithms/src/OptimizationPolyalgorithms.jl",
         "http://www.scholarpedia.org/article/Differential-algebraic_equations",
         "https://computing.llnl.gov/projects/sundials",
+        "https://github.com/timholy/QuadDIRECT.jl",
     ],
     format = HTML(
         assets = ["assets/favicon.ico"],

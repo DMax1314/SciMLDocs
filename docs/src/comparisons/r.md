@@ -7,7 +7,7 @@ is the ecosystem for doing this with Julia.
 ## Why SciML? High-Level Workflow Reasons
 
   - **Performance** - The key reason people are moving from R to Julia's SciML in droves
-    is performance. Even [simple ODE solvers are much faster!](https://benchmarks.sciml.ai/stable/MultiLanguage/ode_wrapper_packages/),
+    is performance. Even [simple ODE solvers are much faster!](https://docs.sciml.ai/SciMLBenchmarksOutput/stable/MultiLanguage/ode_wrapper_packages/),
     demonstrating orders of magnitude performance improvements for differential equations,
     nonlinear solving, optimization, and more. And the performance advantages continue to
     grow as more complex algorithms are required.
@@ -65,12 +65,12 @@ The following chart will help you get quickly acquainted with Julia's SciML Tool
 | `data.frame`       | [DataFrames](https://dataframes.juliadata.org/stable/)                                |
 | `plot`             | [Plots](https://docs.juliaplots.org/stable/), [Makie](https://docs.makie.org/stable/) |
 | `ggplot2`          | [AlgebraOfGraphics](https://aog.makie.org/stable/)                                    |
-| `deSolve`          | [DifferentialEquations](https://diffeq.sciml.ai/latest/)                              |
+| `deSolve`          | [DifferentialEquations](https://docs.sciml.ai/DiffEqDocs/stable/)                              |
 | Stan               | [Turing](https://turinglang.org/docs/)                                                |
 
 ## Want to See the Power of Julia?
 
 Check out [this R-Bloggers blog post on diffeqr](https://www.r-bloggers.com/2020/08/gpu-accelerated-ode-solving-in-r-with-julia-the-language-of-libraries/), a package which
-uses [ModelingToolkit](https://mtk.sciml.ai/dev/) to translate R code to Julia, and achieves
+uses [ModelingToolkit](https://docs.sciml.ai/ModelingToolkit/stable/) to translate R code to Julia, and achieves
 **350x acceleration over R's popular deSolve** ODE solver package. But when the solve is
 done purely in Julia, it achieves **2777x acceleration over deSolve**!

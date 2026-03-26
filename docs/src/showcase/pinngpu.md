@@ -11,7 +11,7 @@ it's the heat equation so that's cool).
 ## Step 1: Import Libraries
 
 To solve PDEs using neural networks, we will use the
-[NeuralPDE.jl package](https://neuralpde.sciml.ai/stable/). This package uses
+[NeuralPDE.jl package](https://docs.sciml.ai/NeuralPDE/stable/). This package uses
 ModelingToolkit's symbolic `PDESystem` as an input, and it generates an
 [Optimization.jl](https://docs.sciml.ai/Optimization/stable/) `OptimizationProblem` which,
 when solved, gives the weights of the neural network that solve the PDE. In the end, our
@@ -144,7 +144,10 @@ ps = ps |> ComponentArrays.ComponentArray |> gpud .|> Float64
 ## Step 5: Discretize the PDE via a PINN Training Strategy
 
 ```@example pinn
-strategy = NeuralPDE.GridTraining(0.05)
+import CUDA # hide
+CUDA.reclaim() # hide
+GC.gc() # hide
+strategy = NeuralPDE.GridTraining(0.1)
 discretization = NeuralPDE.PhysicsInformedNN(chain,
     strategy,
     init_params = ps)
